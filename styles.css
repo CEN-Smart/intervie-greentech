@@ -1,0 +1,143 @@
+.center{
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.clock{
+  width: 25rem;
+  height: 25rem;
+  border: 20px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  background-color: #777;
+  font-size: 2rem;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef, inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.hour{
+  width: 4px;
+  height: 35%;
+  background-color: #fff;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: rotate(90deg);
+  transition: all 0.05s ease-in-out;
+}
+
+.minute{
+  width: 4px;
+  height: 45%;
+  background-color: #fff;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: rotate(30deg);
+  transition: all 0.05s ease-in-out;
+}
+
+.twelve{
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.one{
+  position: absolute;
+  top: 8%;
+  right: 25%;
+}
+
+.two{
+  position: absolute;
+  top: 25%;
+  right: 8%;
+}
+.three{
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translate(0, -50%);
+}
+
+.four{
+  position: absolute;
+  bottom: 25%;
+  right: 8%;
+}
+.five{
+  position: absolute;
+  bottom: 8%;
+  right: 25%;
+}
+.six{
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.seven{
+  position: absolute;
+  bottom: 8%;
+  left: 25%;
+}
+.eight{
+  position: absolute;
+  bottom: 25%;
+  left: 8%;
+}
+.nine{
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translate(0, -50%);
+}
+.ten{
+  position: absolute;
+  top: 25%;
+  left: 8%;
+}
+.eleven{
+  position: absolute;
+  top: 8%;
+  left: 25%;
+}
+
+.clock-input{
+  background-color: #cec8c8;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  color: #777;
+}
+
+.clock-button{
+  background-color: #cec8c8;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.time-label{
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
