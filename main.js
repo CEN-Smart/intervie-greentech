@@ -14,7 +14,7 @@ function HandleClockInput() {
   const minuteDegree = minute * 6;
   hourHand.style.transform = `rotate(${hourDegree}deg)`;
   minuteHand.style.transform = `rotate(${minuteDegree}deg)`;
-  inputValue.value = "";
+  inputTimeValue.value = "";
 
 } 
 
